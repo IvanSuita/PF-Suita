@@ -22,7 +22,7 @@ body{
 }
 
 /* SEPARACIÓN GRIDS */
-.cabecera, .bandas, .sponsors, .mapas, .pie, .nosotros{
+.cabecera, .bandas, .sponsors, .mapas, .pie, .nosotros, .entradas1{
     border: 1px solid grey;
     margin-bottom: 10px;
 }
@@ -80,7 +80,6 @@ h1{
     background-image: url(../media/concert2.jpg);
     background-position: center;
     background-repeat: no-repeat;
-    /* background-size: cover; */
     height: 300px;
     padding: 40px;
 }
@@ -133,7 +132,6 @@ footer{
 /* FORM CONTACTO */
 
 .form-container{
-    /* width: 100%; */
     padding: 20px 30px;
     display: flex;
     flex-direction: column;
@@ -193,6 +191,16 @@ footer{
     margin-top: 30px;
 }
 
+/* PAGINA ENTRADAS */
+.entradas h1{
+    font-size: 50px;
+}
+
+.entradas2{
+    align-items: center;
+    padding: 1em;
+}
+
 /* MEDIA QUERY */
 @media screen and (max-width: 576px){
     /* INICIO MENU HAMBURGUESA */
@@ -223,7 +231,7 @@ footer{
 
 
      /* COLUMNAS EN MOBILE */
-   .bandas, .bandas2, .mapas{
+   .bandas, .bandas2, .mapas, .entradas{
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
@@ -233,5 +241,10 @@ footer{
     /* SPONSORS */
     .bandas img{
         width: 60%;
+    }
+
+    /* ENTRADAS */
+    .entradas{
+        text-align: center;
     }
 }
