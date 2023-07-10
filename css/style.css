@@ -62,7 +62,8 @@ h1{
     font-size: 4.3em;
     color: black;
     font-family: 'DK Longreach';
-    justify-content: left;
+    justify-content: center;
+    text-align: center;
 }
 #titulo-bandas{
     font-size: 0.5em;
