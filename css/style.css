@@ -59,11 +59,10 @@ label.menu{
 
 /* FUENTES Y COLORES DE TEXTO */
 h1{
-    font-size: 4.3em;
+    font-size: 5vw;
     color: black;
     font-family: 'DK Longreach';
     justify-content: center;
-    text-align: center;
 }
 #titulo-bandas{
     font-size: 0.5em;
@@ -73,9 +72,6 @@ h1{
     font-weight: bolder;
     color: black;
 }
-.form-container h1{
-    font-size: 3em;
-}
 
 /* PAGINA INDEX */
 
@@ -84,13 +80,13 @@ h1{
     background-image: url(../media/concert2.jpg);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
-    height: 450px;
+    /* background-size: cover; */
+    height: 300px;
     padding: 40px;
 }
 
 .cabecera h1{
-    font-size: 5em;
+    font-size: 4.3em;
 }
 
 /* BANDAS */
@@ -137,7 +133,7 @@ footer{
 /* FORM CONTACTO */
 
 .form-container{
-    width: 100%;
+    /* width: 100%; */
     padding: 20px 30px;
     display: flex;
     flex-direction: column;
@@ -145,8 +141,8 @@ footer{
 }
 
 .form-contacto{
-    width: 500px;
-    max-width: 550px;
+    width: 50vw;
+    /* max-width: 550px; */
     border-radius: 8px;
     border: 1.2px solid #333;
     box-shadow: 5px 5px 10px rgba(117, 116, 116, 0.545);
@@ -204,7 +200,7 @@ footer{
         display: none;
         flex-direction: column;
         align-content: space-between;
-        position: absolute;
+        position: fixed;
         background-color: rgba(122, 122, 122, 0.993);
     }
     .nvbarra ul .nav-item{
@@ -219,13 +215,7 @@ footer{
         display: block;
     }
     /* FIN MENU HAMBURGUESA */
-
-    h1{
-        font-size: 3.2em;
-        color: black;
-        font-family: 'DK Longreach';
-        justify-content: left;
-    }
+ 
     .cabecera p, .bandas p, .mapas p, .sponsors p{
         font-weight: bolder;
         color: black;
