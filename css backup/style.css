@@ -1,0 +1,250 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: auto;
+    
+}
+
+body{
+    width: 100%;
+    max-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../media/fondo\ blanco.jpg);
+}
+
+@font-face {
+    font-family: 'DK Longreach';
+    src: url(../fonts/DK\ Longreach.otf);
+}
+
+/* SEPARACIÓN GRIDS */
+.cabecera, .bandas, .sponsors, .mapas, .pie, .nosotros, .entradas1{
+    border: 1px solid grey;
+    margin-bottom: 10px;
+}
+
+/* Inicio Barra Navegación */
+.nvbarra{ 
+    position: sticky;
+    padding: 10px;
+    width: 100%;
+    background-color: rgba(151, 151, 151, 0.212);
+}
+
+.nvbarra ul{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+a{
+    text-decoration: none;
+    color: rgba(22, 22, 22, 0.89);
+}
+
+/* checkbox-menu */
+#checkbox-menu, label.menu{
+    display: none;
+}
+
+label.menu{
+    font-size: 20.8px;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+/* Fin Barra de Navegación */
+
+/* FUENTES Y COLORES DE TEXTO */
+h1{
+    font-size: 5vw;
+    color: black;
+    font-family: 'DK Longreach';
+    justify-content: center;
+}
+#titulo-bandas{
+    font-size: 0.5em;
+    text-align: center;
+}
+.cabecera p, .bandas p, .mapas p, .sponsors p{
+    font-weight: bolder;
+    color: black;
+}
+
+/* PAGINA INDEX */
+
+/* HEADER */
+.cabecera{
+    background-image: url(../media/concert2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 300px;
+    padding: 40px;
+}
+
+.cabecera h1{
+    font-size: 4.3em;
+}
+
+/* BANDAS */
+.bandas p{
+    display: flex;
+    justify-content: center;
+}
+.bandas img{
+    display: flex;
+    width: 100%;
+    aspect-ratio: 4/2;
+    object-fit: contain;
+    margin: auto;
+}
+
+/* SPONSORS */
+
+.sponsors img{
+    display: flex;
+    width: 60%;
+    aspect-ratio: 3/2;
+    object-fit: contain;
+    justify-content: center;
+    margin: auto;
+}
+
+/* MAPAS */
+
+.mapas .row .col p, .sponsors p{
+    display: flex;
+    justify-content: center;
+}
+
+/* FOOTER */
+footer{
+    background-color: aliceblue;
+}
+.pie img{
+    width: 30%;
+}
+
+
+
+/* FORM CONTACTO */
+
+.form-container{
+    padding: 20px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-contacto{
+    width: 50vw;
+    /* max-width: 550px; */
+    border-radius: 8px;
+    border: 1.2px solid #333;
+    box-shadow: 5px 5px 10px rgba(117, 116, 116, 0.545);
+}
+.form-box{
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f7f4f4;
+}
+.form-box input, .form-box textarea{
+    width: 70%;
+    height: 25px;
+    padding: 3px 5px;
+    font-size: 16px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+.form-box textarea{
+    height: 150px;
+    min-height: 150px;
+    max-height: 300px;
+    resize: vertical;
+}
+.boton-enviar, .boton-cancelar{
+    width: 12rem;
+    border: 1px solid #333;
+    border-radius: 8px;
+    background-color: rgb(53, 202, 53);
+}
+.boton-cancelar{
+    background-color: rgb(218, 120, 81);
+}
+
+/* PSEUDOCLASES FORM */
+
+.form-box input:not(:focus), .form-box textarea:not(:focus){
+    background-color: #e9e8e8;
+}
+
+.form-box button:hover{
+    background-color: #d8d8d8;
+}
+
+.row .dia2{
+    margin-top: 30px;
+}
+
+/* PAGINA ENTRADAS */
+.entradas h1{
+    font-size: 50px;
+}
+
+.entradas2{
+    align-items: center;
+    padding: 1em;
+}
+
+/* MEDIA QUERY */
+@media screen and (max-width: 576px){
+    /* INICIO MENU HAMBURGUESA */
+    .nvbarra ul{
+        display: none;
+        flex-direction: column;
+        align-content: space-between;
+        position: fixed;
+        background-color: rgba(122, 122, 122, 0.993);
+    }
+    .nvbarra ul .nav-item{
+        border: 0.03rem solid black;
+        background-color: rgba(240, 240, 240, 0.726);
+    }
+    label.menu{
+        display: block;
+        margin-left: 10px;
+    }
+    #checkbox-menu:checked ~ ul{
+        display: block;
+    }
+    /* FIN MENU HAMBURGUESA */
+ 
+    .cabecera p, .bandas p, .mapas p, .sponsors p{
+        font-weight: bolder;
+        color: black;
+    }
+
+
+     /* COLUMNAS EN MOBILE */
+   .bandas, .bandas2, .mapas, .entradas{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        text-align: center;
+    }  
+
+    /* SPONSORS */
+    .bandas img{
+        width: 60%;
+    }
+
+    /* ENTRADAS */
+    .entradas{
+        text-align: center;
+    }
+}
