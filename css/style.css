@@ -20,12 +20,6 @@ body {
   font-family: "DK Longreach";
   src: url(../fonts/DK\ Longreach.otf);
 }
-/* SEPARACIÓN GRIDS */
-.cabecera, .bandas, .sponsors, .mapas, .pie, .nosotros, .entradas1 {
-  border: 1px solid grey;
-  margin-bottom: 10px;
-}
-
 /* FUENTES Y COLORES DE TEXTO */
 h1 {
   font-size: 4.3em;
@@ -42,6 +36,12 @@ h1 {
 .cabecera p, .bandas p, .mapas p, .sponsors p {
   font-weight: bolder;
   color: black;
+}
+
+/* SEPARACIÓN GRIDS */
+.cabecera, .bandas, .sponsors, .mapas, .pie, .nosotros, .entradas1 {
+  border: 1px solid grey;
+  margin-bottom: 10px;
 }
 
 /* Inicio Barra Navegación */
@@ -123,6 +123,7 @@ footer {
   width: 30%;
 }
 
+/* Pagina Contacto */
 /* FORM CONTACTO */
 .form-container {
   padding: 20px 30px;

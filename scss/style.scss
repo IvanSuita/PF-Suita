@@ -1,33 +1,11 @@
 @import "partials/variables";
 @import "partials/reset";
-
-@font-face {
-    font-family: 'DK Longreach';
-    src: url(../fonts/DK\ Longreach.otf);
-}
+@import "partials/fonts";
 
 /* SEPARACIÓN GRIDS */
 .cabecera, .bandas, .sponsors, .mapas, .pie, .nosotros, .entradas1{
     border: 1px solid grey;
     margin-bottom: 10px;
-}
-
-/* FUENTES Y COLORES DE TEXTO */
-h1{
-    font-size: $h-1;
-    color: black;
-    font-family: 'DK Longreach';
-    justify-content: center;
-}
-
-#titulo-bandas{
-    font-size: 0.5em;
-    text-align: center;
-}
-
-.cabecera p, .bandas p, .mapas p, .sponsors p{
-    font-weight: bolder;
-    color: black;
 }
 
 /* Inicio Barra Navegación */
@@ -60,7 +38,10 @@ label.menu{
 }
 /* Fin Barra de Navegación */
 
+
+// ===================================== 
 /* PAGINA INDEX */
+// =====================================
 
 /* HEADER */
 .cabecera{
@@ -111,9 +92,11 @@ footer{
 }
 
 
+// =====================
+/* Pagina Contacto */
+// =====================
 
 /* FORM CONTACTO */
-
 .form-container{
     padding: 20px 30px;
     display: flex;
@@ -173,7 +156,10 @@ footer{
     margin-top: 30px;
 }
 
+
+// ============================
 /* PAGINA ENTRADAS */
+// ============================
 .entradas h1{
     font-size: $h-1;
 }
@@ -183,4 +169,5 @@ footer{
     padding: 1em;
 }
 
+@import "partials/conditions";
 @import "partials/queries";

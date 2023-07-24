@@ -1,0 +1,22 @@
+@font-face {
+    font-family: 'DK Longreach';
+    src: url(../fonts/DK\ Longreach.otf);
+}
+
+/* FUENTES Y COLORES DE TEXTO */
+h1{
+    font-size: $h-1;
+    color: black;
+    font-family: 'DK Longreach';
+    justify-content: center;
+}
+
+#titulo-bandas{
+    font-size: 0.5em;
+    text-align: center;
+}
+
+.cabecera p, .bandas p, .mapas p, .sponsors p{
+    font-weight: bolder;
+    color: black;
+}
