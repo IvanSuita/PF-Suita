@@ -1,0 +1,47 @@
+/* MEDIA QUERY */
+@media screen and (max-width: 576px){
+    /* INICIO MENU HAMBURGUESA */
+    .nvbarra ul{
+        display: none;
+        flex-direction: column;
+        align-content: space-between;
+        position: fixed;
+        background-color: rgba(122, 122, 122, 0.993);
+    }
+    .nvbarra ul .nav-item{
+        border: 0.03rem solid black;
+        background-color: rgba(240, 240, 240, 0.726);
+    }
+    label.menu{
+        display: block;
+        margin-left: 10px;
+    }
+    #checkbox-menu:checked ~ ul{
+        display: block;
+    }
+    /* FIN MENU HAMBURGUESA */
+ 
+    .cabecera p, .bandas p, .mapas p, .sponsors p{
+        font-weight: bolder;
+        color: black;
+    }
+
+
+     /* COLUMNAS EN MOBILE */
+   .bandas, .bandas2, .mapas, .entradas{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        text-align: center;
+    }  
+
+    /* SPONSORS */
+    .bandas img{
+        width: 60%;
+    }
+
+    /* ENTRADAS */
+    .entradas{
+        text-align: center;
+    }
+}

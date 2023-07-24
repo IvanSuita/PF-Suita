@@ -1,20 +1,5 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    overflow: auto;
-    
-}
-
-body{
-    width: 100%;
-    max-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-image: url(../media/fondo\ blanco.jpg);
-}
+@import "partials/variables";
+@import "partials/reset";
 
 @font-face {
     font-family: 'DK Longreach';
@@ -29,15 +14,17 @@ body{
 
 /* FUENTES Y COLORES DE TEXTO */
 h1{
-    font-size: 4.3em;
+    font-size: $h-1;
     color: black;
     font-family: 'DK Longreach';
     justify-content: center;
 }
+
 #titulo-bandas{
     font-size: 0.5em;
     text-align: center;
 }
+
 .cabecera p, .bandas p, .mapas p, .sponsors p{
     font-weight: bolder;
     color: black;
@@ -188,7 +175,7 @@ footer{
 
 /* PAGINA ENTRADAS */
 .entradas h1{
-    font-size: 50px;
+    font-size: $h-1;
 }
 
 .entradas2{
@@ -196,50 +183,4 @@ footer{
     padding: 1em;
 }
 
-/* MEDIA QUERY */
-@media screen and (max-width: 576px){
-    /* INICIO MENU HAMBURGUESA */
-    .nvbarra ul{
-        display: none;
-        flex-direction: column;
-        align-content: space-between;
-        position: fixed;
-        background-color: rgba(122, 122, 122, 0.993);
-    }
-    .nvbarra ul .nav-item{
-        border: 0.03rem solid black;
-        background-color: rgba(240, 240, 240, 0.726);
-    }
-    label.menu{
-        display: block;
-        margin-left: 10px;
-    }
-    #checkbox-menu:checked ~ ul{
-        display: block;
-    }
-    /* FIN MENU HAMBURGUESA */
- 
-    .cabecera p, .bandas p, .mapas p, .sponsors p{
-        font-weight: bolder;
-        color: black;
-    }
-
-
-     /* COLUMNAS EN MOBILE */
-   .bandas, .bandas2, .mapas, .entradas{
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-        text-align: center;
-    }  
-
-    /* SPONSORS */
-    .bandas img{
-        width: 60%;
-    }
-
-    /* ENTRADAS */
-    .entradas{
-        text-align: center;
-    }
-}
+@import "partials/queries";
