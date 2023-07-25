@@ -170,11 +170,6 @@ footer {
   width: 12rem;
   border: 1px solid #333;
   border-radius: 8px;
-  background-color: rgb(53, 202, 53);
-}
-
-.boton-cancelar {
-  background-color: rgb(218, 120, 81);
 }
 
 /* PSEUDOCLASES FORM */
@@ -198,6 +193,18 @@ footer {
 .entradas2 {
   align-items: center;
   padding: 1em;
+}
+
+.btn-naranja {
+  background-color: #f88111;
+}
+
+.btn-verde {
+  background-color: #11c34c;
+}
+
+.btn-dorado {
+  background-color: #d3c082;
 }
 
 /* MEDIA QUERY */

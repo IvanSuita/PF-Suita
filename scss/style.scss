@@ -155,16 +155,12 @@ footer{
     max-height: 300px;
     resize: vertical;
 }
-.boton-enviar{
+.boton-enviar, .boton-cancelar{
     width: 12rem;
     border: 1px solid #333;
     border-radius: 8px;
-    background-color: rgb(53, 202, 53);
 }
-.boton-cancelar{
-    @extend .boton-enviar;
-    background-color: rgb(218, 120, 81);
-}
+
 
 /* PSEUDOCLASES FORM */
 

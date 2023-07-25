@@ -1,0 +1,12 @@
+// BUCLE
+$btn-colores:(
+    naranja: #f88111,
+    verde: #11c34c,
+    dorado: #d3c082
+);
+
+@each $btn-color, $color in $btn-colores{
+    .btn-#{$btn-color} {
+        background-color: #{$color};
+    }
+}
