@@ -2,6 +2,17 @@
 @import "partials/reset";
 @import "partials/fonts";
 
+
+body{
+    width: $anchoMaximo;
+    max-height: $totalPagina;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../media/fondo\ blanco.jpg);
+}
+
 /* SEPARACIÓN GRIDS */
 .cabecera, .bandas, .sponsors, .mapas, .pie, .nosotros, .entradas1{
     border: 1px solid grey;
@@ -12,20 +23,21 @@
 .nvbarra{ 
     position: sticky;
     padding: 10px;
-    width: 100%;
+    width: $anchoMaximo;
     background-color: rgba(151, 151, 151, 0.212);
 }
 
-.nvbarra ul{
+.nvbarra {
+    ul{
     display: flex;
     justify-content: space-evenly;
-}
+    }
 
-a{
+    a{
     text-decoration: none;
     color: rgba(22, 22, 22, 0.89);
-}
-
+    }
+} 
 /* checkbox-menu */
 #checkbox-menu, label.menu{
     display: none;
@@ -53,32 +65,43 @@ label.menu{
 }
 
 /* BANDAS */
-.bandas p{
+.bandas{
+    p{
     display: flex;
     justify-content: center;
-}
-.bandas img{
+    }
+
+    img{
     display: flex;
-    width: 100%;
+    width: $anchoMaximo;
     aspect-ratio: 4/2;
     object-fit: contain;
     margin: auto;
+    }
 }
+
 
 /* SPONSORS */
 
-.sponsors img{
+.sponsors{ 
+    img{
     display: flex;
     width: 60%;
     aspect-ratio: 3/2;
     object-fit: contain;
     justify-content: center;
     margin: auto;
+    }
+
+    p{
+    display: flex;
+    justify-content: center;
+    }
 }
 
 /* MAPAS */
 
-.mapas .row .col p, .sponsors p{
+.mapas div p{
     display: flex;
     justify-content: center;
 }
@@ -132,13 +155,14 @@ footer{
     max-height: 300px;
     resize: vertical;
 }
-.boton-enviar, .boton-cancelar{
+.boton-enviar{
     width: 12rem;
     border: 1px solid #333;
     border-radius: 8px;
     background-color: rgb(53, 202, 53);
 }
 .boton-cancelar{
+    @extend .boton-enviar;
     background-color: rgb(218, 120, 81);
 }
 
