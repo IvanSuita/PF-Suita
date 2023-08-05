@@ -56,8 +56,7 @@ body{
 
 .carousel-inner{
     img{
-        width: $anchoMaximo;
-        aspect-ratio: 4/2;
+        aspect-ratio: 6/3;
     }
     h3{
         font-size: 4vw;
@@ -125,8 +124,6 @@ input.btn-success{
     width: 95%;
 }
 
-
-
 /* PSEUDOCLASES FORM */
 
 .form-box input:not(:focus), .form-box textarea:not(:focus){
@@ -163,6 +160,25 @@ input.btn-success{
     border: 1px solid grey;
     border-radius: 5px;
     margin-bottom: 5px;
+}
+
+// ============================
+/* PAGINA BANDAS */
+// ============================
+.card{
+    height: $card-height;
+    h5{
+        overflow: hidden;
+    }
+    img{
+        height: 250px;
+        object-fit: fill;
+    }
+}
+
+.bandas2{
+    margin-top: 50px;
+    margin-bottom: 20px;
 }
 
 @import "partials/conditions";
