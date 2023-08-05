@@ -21,14 +21,17 @@ body{
 
 /* Inicio Barra Navegación */
 .navbar{ 
-    position: sticky;
+    background-image: url(../media/fondo\ blanco.jpg);
+    position: static;
     width: $anchoMaximo;
-    background-color: rgba(180, 157, 157, 0.212);
     overflow: visible;
 }
-.nav-item{
-    margin-left: 100px;
-}
+
+.navbar-nav  li{
+    padding-left:30px;
+    padding-right:30px;
+    }
+
 .nav-link{
     font-weight: bold;
 }
@@ -111,55 +114,23 @@ body{
 // =====================
 
 /* FORM CONTACTO */
-.form-container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
 
-.form-contacto{
-    width: 20em;
+div.formu{
     border-radius: 8px;
     border: 1.2px solid #333;
     box-shadow: 5px 5px 10px rgba(117, 116, 116, 0.545);
 }
-.form-box{
-    padding: 15px;
-    display: flex;
-    text-align: center;
-    justify-content: space-between;
-    background-color: #f7f4f4;
+
+input.btn-success{
+    width: 95%;
 }
-.form-box input, .form-box textarea{
-    width: 70%;
-    height: 25px;
-    padding: 3px 5px;
-    font-size: 16px;
-    border-radius: 6px;
-    border: 1px solid #ccc;
-    outline: none;
-}
-.form-box textarea{
-    height: 150px;
-    min-height: 150px;
-    max-height: 300px;
-    resize: vertical;
-}
-.boton-enviar, .boton-cancelar{
-    width: 12rem;
-    border: 1px solid #333;
-    border-radius: 8px;
-}
+
 
 
 /* PSEUDOCLASES FORM */
 
 .form-box input:not(:focus), .form-box textarea:not(:focus){
     background-color: #e9e8e8;
-}
-
-.form-box button:hover{
-    background-color: #d8d8d8;
 }
 
 .row .dia2{
@@ -170,12 +141,18 @@ body{
 // ============================
 /* PAGINA ENTRADAS */
 // ============================
-.entradas h1{
+.entradas{
+    border: 1px solid black;
+
+    h1{
     font-size: $h-1;
-}
+    }
+} 
 .entradasbody{
     border: 1px solid black;
+    padding: 50px;
 }
+
 
 .entradas2{
     align-items: center;
