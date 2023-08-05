@@ -12,7 +12,7 @@
 }
 /* FUENTES Y COLORES DE TEXTO */
 h1 {
-  font-size: 4em;
+  font-size: 4.5em;
   color: black;
   font-family: "DK Longreach";
 }
@@ -23,7 +23,7 @@ h1 {
 }
 
 .cabecera h1 {
-  font-size: 4em;
+  font-size: 4.5em;
   color: white;
   font-family: "DK Longreach";
 }
@@ -33,7 +33,7 @@ h1 {
 }
 
 h2, h3 {
-  font-size: 5vw;
+  font-size: 4.5vw;
   display: flex;
   justify-content: center;
   font-weight: bolder;
@@ -127,6 +127,7 @@ body {
 /* FOOTER */
 .pie {
   border: 1px black solid;
+  height: 15vh;
 }
 .pie h4 {
   overflow: hidden;
@@ -200,7 +201,11 @@ body {
 
 /* PAGINA ENTRADAS */
 .entradas h1 {
-  font-size: 4em;
+  font-size: 4.5em;
+}
+
+.entradasbody {
+  border: 1px solid black;
 }
 
 .entradas2 {
@@ -210,6 +215,8 @@ body {
 
 .detalle_entrada {
   border: 1px solid grey;
+  border-radius: 5px;
+  margin-bottom: 5px;
 }
 
 .btn-naranja {
