@@ -6,9 +6,8 @@
 /* FUENTES Y COLORES DE TEXTO */
 h1{
     font-size: $h-1;
-    color: black;
+    color: white;
     font-family: 'DK Longreach';
-    justify-content: center;
 }
 
 #titulo-bandas{
@@ -16,7 +15,22 @@ h1{
     text-align: center;
 }
 
-.cabecera p, .bandas p, .mapas p, .sponsors p{
+.cabecera p{
     font-weight: bolder;
+    color: white;
+}
+
+h2{
+    font-size: 6vw;
+    display: flex;
+    justify-content: center;
+    font-weight: bolder;
+    overflow: hidden;
     color: black;
+    font-family: 'DK Longreach'
+    }
+
+h3{
+    @extend h2;
+    font-size: 3.5vw;
 }

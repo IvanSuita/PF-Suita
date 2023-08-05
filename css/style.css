@@ -13,9 +13,8 @@
 /* FUENTES Y COLORES DE TEXTO */
 h1 {
   font-size: 4em;
-  color: black;
+  color: white;
   font-family: "DK Longreach";
-  justify-content: center;
 }
 
 #titulo-bandas {
@@ -23,9 +22,23 @@ h1 {
   text-align: center;
 }
 
-.cabecera p, .bandas p, .mapas p, .sponsors p {
+.cabecera p {
   font-weight: bolder;
+  color: white;
+}
+
+h2, h3 {
+  font-size: 6vw;
+  display: flex;
+  justify-content: center;
+  font-weight: bolder;
+  overflow: hidden;
   color: black;
+  font-family: "DK Longreach";
+}
+
+h3 {
+  font-size: 3.5vw;
 }
 
 body {
@@ -41,7 +54,7 @@ body {
 /* SEPARACIÓN GRIDS */
 .cabecera, .bandas, .sponsors, .mapas, .pie, .nosotros, .entradas1 {
   border: 1px solid grey;
-  margin-bottom: 10px;
+  margin-bottom: 60px;
 }
 
 /* Inicio Barra Navegación */
@@ -76,49 +89,53 @@ label.menu {
 /* PAGINA INDEX */
 /* HEADER */
 .cabecera {
-  background-image: url(../media/concert2.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 300px;
+  background-image: url(../media/PUBLICO1.jpg);
+  align-items: center;
+  text-align: center;
+  background-position: bottom;
+  height: 350px;
+  width: 100%;
   padding: 40px;
 }
 
-/* BANDAS */
-.bandas p {
-  display: flex;
-  justify-content: center;
-}
-.bandas img {
-  display: flex;
+.carousel-inner img {
   width: 100%;
   aspect-ratio: 4/2;
-  object-fit: contain;
-  margin: auto;
+}
+.carousel-inner h3 {
+  font-size: 5vw;
+  font-weight: bolder;
+  overflow: hidden;
+  color: white;
 }
 
 /* SPONSORS */
 .sponsors img {
   display: flex;
   width: 60%;
-  aspect-ratio: 3/2;
+  aspect-ratio: 2/2;
   object-fit: contain;
   justify-content: center;
   margin: auto;
-}
-.sponsors p {
-  display: flex;
-  justify-content: center;
+  text-align: center;
 }
 
 /* MAPAS */
-.mapas div p {
+.mapas {
+  text-align: center;
+}
+.mapas div h3 {
+  color: black;
   display: flex;
   justify-content: center;
 }
 
 /* FOOTER */
 footer {
-  background-color: aliceblue;
+  background-color: rgba(218, 168, 75, 0.959);
+}
+footer h4 {
+  overflow: hidden;
 }
 
 .pie img {
@@ -229,12 +246,8 @@ footer {
     display: block;
   }
   /* FIN MENU HAMBURGUESA */
-  .cabecera p, .bandas p, .mapas p, .sponsors p {
-    font-weight: bolder;
-    color: black;
-  }
   /* COLUMNAS EN MOBILE */
-  .bandas, .bandas2, .mapas, .entradas {
+  .cabecera, .bandas, .bandas2, .mapas, .entradas {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;

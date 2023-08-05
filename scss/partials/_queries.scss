@@ -20,15 +20,9 @@
         display: block;
     }
     /* FIN MENU HAMBURGUESA */
- 
-    .cabecera p, .bandas p, .mapas p, .sponsors p{
-        font-weight: bolder;
-        color: black;
-    }
-
 
      /* COLUMNAS EN MOBILE */
-   .bandas, .bandas2, .mapas, .entradas{
+   .cabecera, .bandas, .bandas2, .mapas, .entradas{
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;

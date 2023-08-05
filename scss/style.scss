@@ -16,7 +16,7 @@ body{
 /* SEPARACIÓN GRIDS */
 .cabecera, .bandas, .sponsors, .mapas, .pie, .nosotros, .entradas1{
     border: 1px solid grey;
-    margin-bottom: 10px;
+    margin-bottom: 60px;
 }
 
 /* Inicio Barra Navegación */
@@ -57,58 +57,61 @@ label.menu{
 
 /* HEADER */
 .cabecera{
-    background-image: url(../media/concert2.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 300px;
+    background-image: url(../media/PUBLICO1.jpg);
+    align-items: center;
+    text-align: center;
+    background-position: bottom;
+    height: 350px;
+    width: 100%;
     padding: 40px;
 }
 
-/* BANDAS */
-.bandas{
-    p{
-    display: flex;
-    justify-content: center;
-    }
-
+.carousel-inner{
     img{
-    display: flex;
-    width: $anchoMaximo;
-    aspect-ratio: 4/2;
-    object-fit: contain;
-    margin: auto;
+        width: $anchoMaximo;
+        aspect-ratio: 4/2;
+        // object-fit: contain;
+    }
+    h3{
+        font-size: 5vw;
+        font-weight: bolder;
+        overflow: hidden;
+        color: white;
     }
 }
-
 
 /* SPONSORS */
 
 .sponsors{ 
+
     img{
     display: flex;
     width: 60%;
-    aspect-ratio: 3/2;
+    aspect-ratio: 2/2;
     object-fit: contain;
     justify-content: center;
     margin: auto;
-    }
-
-    p{
-    display: flex;
-    justify-content: center;
+    text-align: center;
     }
 }
 
 /* MAPAS */
 
-.mapas div p{
+.mapas {
+    text-align: center;
+    div h3{
+    color: black;
     display: flex;
     justify-content: center;
+    }
 }
 
 /* FOOTER */
 footer{
-    background-color: aliceblue;
+    background-color: rgba(218, 168, 75, 0.959);
+    h4{
+    overflow: hidden;
+    }
 }
 .pie img{
     width: 30%;
