@@ -46,7 +46,7 @@ body{
 
 /* HEADER */
 .cabecera{
-    background-image: url(../media/PUBLICO1.jpg);
+    background-image: url(../media/CABECERA1.jpg);
     align-items: center;
     text-align: center;
     background-position: bottom;
@@ -115,25 +115,13 @@ body{
 /* FORM CONTACTO */
 
 div.formu{
-    border-radius: 8px;
-    border: 1.2px solid #333;
     box-shadow: 5px 5px 10px rgba(117, 116, 116, 0.545);
+    height: 100vh;
 }
 
 input.btn-success{
     width: 95%;
 }
-
-/* PSEUDOCLASES FORM */
-
-.form-box input:not(:focus), .form-box textarea:not(:focus){
-    background-color: #e9e8e8;
-}
-
-.row .dia2{
-    margin-top: 30px;
-}
-
 
 // ============================
 /* PAGINA ENTRADAS */
@@ -145,11 +133,6 @@ input.btn-success{
     font-size: $h-1;
     }
 } 
-.entradasbody{
-    border: 1px solid black;
-    padding: 50px;
-}
-
 
 .entradas2{
     align-items: center;
