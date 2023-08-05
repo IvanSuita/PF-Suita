@@ -82,6 +82,7 @@ body {
 /* PAGINA INDEX */
 /* HEADER */
 .cabecera {
+  background-image: url(../media/PUBLICO1.jpg);
   align-items: center;
   text-align: center;
   background-position: bottom;
