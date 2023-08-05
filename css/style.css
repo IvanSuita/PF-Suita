@@ -28,7 +28,7 @@ h1 {
 }
 
 h2, h3 {
-  font-size: 6vw;
+  font-size: 5vw;
   display: flex;
   justify-content: center;
   font-weight: bolder;
@@ -38,7 +38,7 @@ h2, h3 {
 }
 
 h3 {
-  font-size: 3.5vw;
+  font-size: 3em;
 }
 
 body {
@@ -53,8 +53,7 @@ body {
 
 /* SEPARACIÓN GRIDS */
 .cabecera, .bandas, .sponsors, .mapas, .pie, .nosotros, .entradas1 {
-  border: 1px solid grey;
-  margin-bottom: 60px;
+  margin-bottom: 30px;
 }
 
 /* Inicio Barra Navegación */
@@ -103,7 +102,7 @@ label.menu {
   aspect-ratio: 4/2;
 }
 .carousel-inner h3 {
-  font-size: 5vw;
+  font-size: 4vw;
   font-weight: bolder;
   overflow: hidden;
   color: white;
@@ -131,15 +130,17 @@ label.menu {
 }
 
 /* FOOTER */
-footer {
-  background-color: rgba(218, 168, 75, 0.959);
+.pie {
+  border: 1px black solid;
 }
-footer h4 {
+.pie h4 {
   overflow: hidden;
 }
-
 .pie img {
   width: 30%;
+}
+.pie a {
+  text-decoration: none;
 }
 
 /* Pagina Contacto */

@@ -21,7 +21,7 @@ h1{
 }
 
 h2{
-    font-size: 6vw;
+    font-size: 5vw;
     display: flex;
     justify-content: center;
     font-weight: bolder;
@@ -32,5 +32,5 @@ h2{
 
 h3{
     @extend h2;
-    font-size: 3.5vw;
+    font-size: 3em;
 }

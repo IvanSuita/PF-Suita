@@ -15,8 +15,8 @@ body{
 
 /* SEPARACIÓN GRIDS */
 .cabecera, .bandas, .sponsors, .mapas, .pie, .nosotros, .entradas1{
-    border: 1px solid grey;
-    margin-bottom: 60px;
+    // border: 1px solid grey;
+    margin-bottom: 30px;
 }
 
 /* Inicio Barra Navegación */
@@ -73,7 +73,7 @@ label.menu{
         // object-fit: contain;
     }
     h3{
-        font-size: 5vw;
+        font-size: 4vw;
         font-weight: bolder;
         overflow: hidden;
         color: white;
@@ -107,16 +107,18 @@ label.menu{
 }
 
 /* FOOTER */
-footer{
-    background-color: rgba(218, 168, 75, 0.959);
+.pie{
+    border: 1px black solid;
     h4{
     overflow: hidden;
     }
+    img{
+        width: 30%;
+    }
+    a{
+        text-decoration: none;
+    }
 }
-.pie img{
-    width: 30%;
-}
-
 
 // =====================
 /* Pagina Contacto */
