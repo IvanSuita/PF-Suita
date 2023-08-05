@@ -20,34 +20,20 @@ body{
 }
 
 /* Inicio Barra Navegación */
-.nvbarra{ 
+.navbar{ 
     position: sticky;
-    padding: 10px;
     width: $anchoMaximo;
-    background-color: rgba(151, 151, 151, 0.212);
+    background-color: rgba(180, 157, 157, 0.212);
+    overflow: visible;
+}
+.nav-item{
+    margin-left: 100px;
+}
+.nav-link{
+    font-weight: bold;
 }
 
-.nvbarra {
-    ul{
-    display: flex;
-    justify-content: space-evenly;
-    }
 
-    a{
-    text-decoration: none;
-    color: rgba(22, 22, 22, 0.89);
-    }
-} 
-/* checkbox-menu */
-#checkbox-menu, label.menu{
-    display: none;
-}
-
-label.menu{
-    font-size: 20.8px;
-    color: rgb(0, 0, 0);
-    cursor: pointer;
-}
 /* Fin Barra de Navegación */
 
 
@@ -57,20 +43,18 @@ label.menu{
 
 /* HEADER */
 .cabecera{
-    background-image: url(../media/PUBLICO1.jpg);
     align-items: center;
     text-align: center;
     background-position: bottom;
     height: 350px;
-    width: 100%;
     padding: 40px;
+    background-image: url(../media/PUBLICO1.jpg);
 }
 
 .carousel-inner{
     img{
         width: $anchoMaximo;
         aspect-ratio: 4/2;
-        // object-fit: contain;
     }
     h3{
         font-size: 4vw;
@@ -83,7 +67,7 @@ label.menu{
 /* SPONSORS */
 
 .sponsors{ 
-
+    border: 1px solid grey;
     img{
     display: flex;
     width: 60%;
@@ -117,6 +101,7 @@ label.menu{
     }
     a{
         text-decoration: none;
+        color: black;
     }
 }
 
@@ -126,14 +111,13 @@ label.menu{
 
 /* FORM CONTACTO */
 .form-container{
-    padding: 20px 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .form-contacto{
-    width: 50vw;
+    width: 20em;
     border-radius: 8px;
     border: 1.2px solid #333;
     box-shadow: 5px 5px 10px rgba(117, 116, 116, 0.545);
@@ -192,6 +176,10 @@ label.menu{
 .entradas2{
     align-items: center;
     padding: 1em;
+}
+
+.detalle_entrada{
+    border: 1px solid grey;
 }
 
 @import "partials/conditions";

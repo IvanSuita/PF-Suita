@@ -13,7 +13,7 @@
 /* FUENTES Y COLORES DE TEXTO */
 h1 {
   font-size: 4em;
-  color: white;
+  color: black;
   font-family: "DK Longreach";
 }
 
@@ -22,6 +22,11 @@ h1 {
   text-align: center;
 }
 
+.cabecera h1 {
+  font-size: 4em;
+  color: white;
+  font-family: "DK Longreach";
+}
 .cabecera p {
   font-weight: bolder;
   color: white;
@@ -57,44 +62,31 @@ body {
 }
 
 /* Inicio Barra Navegación */
-.nvbarra {
+.navbar {
   position: sticky;
-  padding: 10px;
   width: 100%;
-  background-color: rgba(151, 151, 151, 0.212);
+  background-color: rgba(180, 157, 157, 0.212);
+  overflow: visible;
 }
 
-.nvbarra ul {
-  display: flex;
-  justify-content: space-evenly;
-}
-.nvbarra a {
-  text-decoration: none;
-  color: rgba(22, 22, 22, 0.89);
+.nav-item {
+  margin-left: 100px;
 }
 
-/* checkbox-menu */
-#checkbox-menu, label.menu {
-  display: none;
-}
-
-label.menu {
-  font-size: 20.8px;
-  color: rgb(0, 0, 0);
-  cursor: pointer;
+.nav-link {
+  font-weight: bold;
 }
 
 /* Fin Barra de Navegación */
 /* PAGINA INDEX */
 /* HEADER */
 .cabecera {
-  background-image: url(../media/PUBLICO1.jpg);
   align-items: center;
   text-align: center;
   background-position: bottom;
   height: 350px;
-  width: 100%;
   padding: 40px;
+  background-image: url(../media/PUBLICO1.jpg);
 }
 
 .carousel-inner img {
@@ -109,6 +101,9 @@ label.menu {
 }
 
 /* SPONSORS */
+.sponsors {
+  border: 1px solid grey;
+}
 .sponsors img {
   display: flex;
   width: 60%;
@@ -141,19 +136,19 @@ label.menu {
 }
 .pie a {
   text-decoration: none;
+  color: black;
 }
 
 /* Pagina Contacto */
 /* FORM CONTACTO */
 .form-container {
-  padding: 20px 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 .form-contacto {
-  width: 50vw;
+  width: 20em;
   border-radius: 8px;
   border: 1.2px solid #333;
   box-shadow: 5px 5px 10px rgba(117, 116, 116, 0.545);
@@ -213,6 +208,10 @@ label.menu {
   padding: 1em;
 }
 
+.detalle_entrada {
+  border: 1px solid grey;
+}
+
 .btn-naranja {
   background-color: #f88111;
 }
@@ -227,26 +226,6 @@ label.menu {
 
 /* MEDIA QUERY */
 @media screen and (max-width: 576px) {
-  /* INICIO MENU HAMBURGUESA */
-  .nvbarra ul {
-    display: none;
-    flex-direction: column;
-    align-content: space-between;
-    position: fixed;
-    background-color: rgba(122, 122, 122, 0.993);
-  }
-  .nvbarra ul .nav-item {
-    border: 0.03rem solid black;
-    background-color: rgba(240, 240, 240, 0.726);
-  }
-  label.menu {
-    display: block;
-    margin-left: 10px;
-  }
-  #checkbox-menu:checked ~ ul {
-    display: block;
-  }
-  /* FIN MENU HAMBURGUESA */
   /* COLUMNAS EN MOBILE */
   .cabecera, .bandas, .bandas2, .mapas, .entradas {
     display: flex;

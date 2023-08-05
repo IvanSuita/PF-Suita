@@ -6,7 +6,7 @@
 /* FUENTES Y COLORES DE TEXTO */
 h1{
     font-size: $h-1;
-    color: white;
+    color: black;
     font-family: 'DK Longreach';
 }
 
@@ -15,9 +15,16 @@ h1{
     text-align: center;
 }
 
-.cabecera p{
+.cabecera {
+    h1{
+        font-size: $h-1;
+        color: white;
+        font-family: 'DK Longreach';
+    }
+    p{
     font-weight: bolder;
     color: white;
+    }
 }
 
 h2{
